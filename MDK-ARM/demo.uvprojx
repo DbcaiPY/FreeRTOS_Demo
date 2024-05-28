@@ -801,6 +801,26 @@
               <FileType>5</FileType>
               <FilePath>..\Drivers\STM32F103\driver_light_sensor.h</FilePath>
             </File>
+            <File>
+              <FileName>driver_dht11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_dht11.c</FilePath>
+            </File>
+            <File>
+              <FileName>driver_dht11.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_dht11.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Demo</GroupName>
+          <Files>
+            <File>
+              <FileName>demo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\demo.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

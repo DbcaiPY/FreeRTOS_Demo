@@ -152,7 +152,39 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>123</LineNumber>
+          <LineNumber>328</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134219358</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\Drivers\STM32F103\driver_dht11.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\demo\../Drivers/STM32F103/driver_dht11.c\328</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>318</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134219330</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\Drivers\STM32F103\driver_dht11.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\demo\../Drivers/STM32F103/driver_dht11.c\318</Expression>
+        </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
+          <LineNumber>232</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -161,7 +193,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\Drivers\STM32F103\driver_light_sensor.c</Filename>
+          <Filename>..\Drivers\STM32F103\driver_dht11.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -692,7 +724,7 @@
 
   <Group>
     <GroupName>Drivers/STM32F103</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -837,6 +869,50 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\Drivers\STM32F103\driver_light_sensor.h</PathWithFileName>
       <FilenameWithoutPath>driver_light_sensor.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>49</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Drivers\STM32F103\driver_dht11.c</PathWithFileName>
+      <FilenameWithoutPath>driver_dht11.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>50</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Drivers\STM32F103\driver_dht11.h</PathWithFileName>
+      <FilenameWithoutPath>driver_dht11.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>Demo</GroupName>
+    <tvExp>1</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>51</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\demo.c</PathWithFileName>
+      <FilenameWithoutPath>demo.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

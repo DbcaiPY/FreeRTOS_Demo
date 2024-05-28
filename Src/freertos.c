@@ -31,6 +31,7 @@
 #include "driver_timer.h"
 #include "driver_lcd.h"
 #include "driver_light_sensor.h"
+#include "driver_dht11.h"
 
 /* USER CODE END Includes */
 
@@ -51,6 +52,8 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
+
+BaseType_t ret;
 
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
@@ -77,7 +80,8 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-
+	LCD_Init();
+	LCD_Clear();
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -102,6 +106,20 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+	
+	xTaskCreate(LightSensor_Test, "LightSensorTask", 128, NULL, osPriorityNormal1, NULL);
+	xTaskCreate(Key_Test, "LedSensorTask", 128, NULL, osPriorityNormal1, NULL);	
+	ret = xTaskCreate(DHT11_Test, "DHt11Task", 128, NULL, osPriorityNormal1, NULL);
+	
+//	if(ret != pdPASS)
+//	{
+//		LCD_PrintString(0, 6, "fail");
+//	}
+//	else
+//	{
+//		LCD_PrintString(0, 6, "success");
+//	}
+	
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -130,8 +148,11 @@ void StartDefaultTask(void *argument)
 		//Led_Test();
 		//LCD_Test();
 		//HAL_Delay(200);
-		//Key_Test();
-		LightSensor_Test();
+//		Key_Test();
+//		LightSensor_Test();
+//		DHT11_Test();
+		osDelay(20);
+		vTaskDelete(defaultTaskHandle);
   }
   /* USER CODE END StartDefaultTask */
 }

@@ -33,3 +33,12 @@ demo\driver_key.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 demo\driver_key.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 demo\driver_key.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo\driver_key.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+demo\driver_key.o: ../Inc/FreeRTOSConfig.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

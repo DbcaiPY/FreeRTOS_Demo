@@ -33,6 +33,9 @@
 //#include "tim.h"
 #include "adc.h"
 
+#include "FreeRTOS.h"
+#include "task.h"
+
 #define LIGHTSENSOR_GPIO_GROUP      GPIOB
 #define LIGHTSENSOR_GPIO_PIN        GPIO_PIN_11
 
@@ -116,6 +119,7 @@ void LightSensor_Test(void)
     uint32_t analog_val;
     uint8_t val;
     LightSensor_Init();
+		LCD_Clear();
 
     while (1)
     {
@@ -129,11 +133,14 @@ void LightSensor_Test(void)
 
 				LightSensor_State(&val);
 				
-				LCD_PrintSignedVal(0,2,val);
+				//LCD_PrintSignedVal(0,2,val);
+				LCD_PrintSignedVal(14,0,val);
 
         
-        mdelay(500);
+        //mdelay(500);
+				//vTaskDelay(500);
+				HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+				vTaskDelay(500);
     }
 }
-
 

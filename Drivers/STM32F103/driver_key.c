@@ -32,6 +32,9 @@
 
 #include "gpio.h"
 
+#include "FreeRTOS.h"
+#include "task.h"
+
 #define KEY_GPIO_GROUP GPIOB
 //#define KEY_GPIO_PIN   GPIO_PIN_14
 #define KEY_GPIO_PIN   GPIO_PIN_1
@@ -93,10 +96,11 @@ void Key_Test(void)
     
     Key_Init();
     Led_Init();
+		LCD_Clear();
 
     while (1)
     {
-        LCD_PrintString(0, 0, "Key Test: ");
+        //LCD_PrintString(0, 0, "Key Test: ");
         
         val = Key_Read();
         Led_Control(LED_GREEN, val);
@@ -104,6 +108,8 @@ void Key_Test(void)
         len = LCD_PrintString(0, 2, "Key : ");
         len += LCD_PrintString(len, 2, val ? "Pressed":"Released");
         LCD_ClearLine(len, 2);
+//				HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+				vTaskDelay(500);			
     }
 }
 
