@@ -118,14 +118,15 @@ void LightSensor_Test(void)
 {
     uint32_t analog_val;
     uint8_t val;
+	
     LightSensor_Init();
 		LCD_Clear();
 
+		
     while (1)
     {
         
         LCD_PrintString(0, 0, "Light Sensor: ");
-
 //        if (!LightSensor_Read(&analog_val))
 //        {
 //            LCD_PrintSignedVal(0, 2, analog_val);

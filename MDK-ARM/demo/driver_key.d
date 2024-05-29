@@ -42,3 +42,5 @@ demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_
 demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
+demo\driver_key.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h

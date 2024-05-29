@@ -53,7 +53,12 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
 
-BaseType_t ret;
+static BaseType_t keyTestRet;
+static BaseType_t keyDealRet;
+static BaseType_t lightSensorRet;
+static BaseType_t dhtRet;
+
+static TaskHandle_t  xKeyDealHandle = NULL;
 
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
@@ -67,11 +72,14 @@ const osThreadAttr_t defaultTask_attributes = {
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 
+TaskHandle_t GetKeyDealHandle(void);
+
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+
 
 /**
   * @brief  FreeRTOS initialization
@@ -106,10 +114,13 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+	 
+	lightSensorRet = xTaskCreate(LightSensor_Test, "LightSensorTask", 128, NULL, osPriorityNormal1, NULL);
 	
-	xTaskCreate(LightSensor_Test, "LightSensorTask", 128, NULL, osPriorityNormal1, NULL);
-	xTaskCreate(Key_Test, "LedSensorTask", 128, NULL, osPriorityNormal1, NULL);	
-	ret = xTaskCreate(DHT11_Test, "DHt11Task", 128, NULL, osPriorityNormal1, NULL);
+//	keyDealRet = xTaskCreate(Key_Deal, "KeyDealTask", 128, NULL, osPriorityNormal1, &xKeyDealHandle);
+	keyTestRet = xTaskCreate(Key_Test, "KeyTask", 128, NULL, osPriorityNormal2, NULL);	
+	
+	dhtRet = xTaskCreate(DHT11_Test, "DHt11Task", 128, NULL, osPriorityNormal1, NULL);
 	
 //	if(ret != pdPASS)
 //	{
@@ -154,11 +165,17 @@ void StartDefaultTask(void *argument)
 		osDelay(20);
 		vTaskDelete(defaultTaskHandle);
   }
+
   /* USER CODE END StartDefaultTask */
 }
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
+
+TaskHandle_t GetKeyDealHandle(void)
+{
+	 return xKeyDealHandle;
+}
 
 /* USER CODE END Application */
 

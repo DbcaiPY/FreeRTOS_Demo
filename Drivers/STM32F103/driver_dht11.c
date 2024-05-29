@@ -310,8 +310,11 @@ void DHT11_Test(void)
 {
 	int hum, temp;
   int len;
+	BaseType_t preTime;
 	
 	DHT11_Init();
+	
+	preTime = xTaskGetTickCount();      // 获取当前时间
 	
 	while (1)
 	{
@@ -332,7 +335,8 @@ void DHT11_Test(void)
 		}
 		//mdelay(2000);  /* 读取周期是2S, 不能读太频繁 */
 		
-		vTaskDelay(2000);
+		//vTaskDelay(2000);
+		vTaskDelayUntil(&preTime, 2000);     // 将延时函数修改为绝对时间
 	}
 }
 

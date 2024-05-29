@@ -28,6 +28,9 @@
 #ifndef _DRIVER_KEY_H
 #define _DRIVER_KEY_H
 
+
+void Key_Deal(void);
+
 /**********************************************************************
  * 函数名称： Key_Init
  * 功能描述： 按键初始化函数
