@@ -36,6 +36,8 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+// 引脚设置
+
 #define LIGHTSENSOR_GPIO_GROUP      GPIOB
 #define LIGHTSENSOR_GPIO_PIN        GPIO_PIN_11
 

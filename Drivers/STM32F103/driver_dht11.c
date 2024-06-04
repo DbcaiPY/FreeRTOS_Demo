@@ -34,6 +34,11 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+// 引脚设置
+
+#define DHT11_GPIO_GROUP      GPIOA
+#define DHT11_GPIO_PIN        GPIO_PIN_1
+
 /* 控制GPIO读取DHT11的数据 
  * 1. 主机发出至少18MS的低脉冲: start信号
  * 2. start信号变为高, 20-40us之后, dht11会拉低总线维持80us
@@ -78,7 +83,7 @@ static void DHT11_PinCfgAsInput(void)
     /* 对于STM32F103, 已经把DHT11的引脚配置为"open drain, pull-up" 
 	* 让它输出1就不会驱动这个引脚, 并且可以读入引脚状态
      */
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(DHT11_GPIO_GROUP, DHT11_GPIO_PIN, GPIO_PIN_SET);
 }
 
 /**********************************************************************
@@ -94,9 +99,9 @@ static void DHT11_PinCfgAsInput(void)
 static void DHT11_PinSet(int val)
 {
 	if (val)
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(DHT11_GPIO_GROUP, DHT11_GPIO_PIN, GPIO_PIN_SET);
 	else
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(DHT11_GPIO_GROUP, DHT11_GPIO_PIN, GPIO_PIN_RESET);
 }
 
 /**********************************************************************
@@ -111,7 +116,7 @@ static void DHT11_PinSet(int val)
  ***********************************************************************/
 static int DHT11_PinRead(void)
 {
-  if (GPIO_PIN_SET == HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1))
+  if (GPIO_PIN_SET == HAL_GPIO_ReadPin(DHT11_GPIO_GROUP, DHT11_GPIO_PIN))
 		return 1;
 	else
 		return 0;
@@ -330,7 +335,7 @@ void DHT11_Test(void)
             len = LCD_PrintSignedVal(0, 4, hum);
             LCD_PutChar(len, 4, '%');
             LCD_PrintSignedVal(9, 4, temp);
-						HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+						HAL_GPIO_TogglePin(DHT11_GPIO_GROUP, GPIO_PIN_4);
 
 		}
 		//mdelay(2000);  /* 读取周期是2S, 不能读太频繁 */
