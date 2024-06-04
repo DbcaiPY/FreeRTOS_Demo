@@ -5,6 +5,8 @@
 "demo\freertos.o"
 "demo\adc.o"
 "demo\i2c.o"
+"demo\tim.o"
+"demo\usart.o"
 "demo\stm32f1xx_it.o"
 "demo\stm32f1xx_hal_msp.o"
 "demo\stm32f1xx_hal_timebase_tim.o"
@@ -24,6 +26,7 @@
 "demo\stm32f1xx_hal_i2c.o"
 "demo\stm32f1xx_hal_tim.o"
 "demo\stm32f1xx_hal_tim_ex.o"
+"demo\stm32f1xx_hal_uart.o"
 "demo\system_stm32f1xx.o"
 "demo\croutine.o"
 "demo\event_groups.o"
@@ -43,12 +46,12 @@
 "demo\driver_light_sensor.o"
 "demo\driver_dht11.o"
 "demo\driver_passive_buzzer.o"
-"demo\tim.o"
 "demo\driver_active_buzzer.o"
+"demo\driver_sg90.o"
 "demo\demo.o"
 "demo\mytask.o"
 "demo\myinclude.o"
---strict --scatter "demo\demo.sct"
+--library_type=microlib --strict --scatter "demo\demo.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "demo.map" -o demo\demo.axf

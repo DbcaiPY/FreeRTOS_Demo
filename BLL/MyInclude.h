@@ -18,8 +18,9 @@
 #include "driver_dht11.h"
 #include "driver_passive_buzzer.h"
 #include "driver_active_buzzer.h"
+#include "driver_sg90.h"
 
-/* USER CODE END Includes */
+/* USER CODE END Includes */   
 
 #endif
 

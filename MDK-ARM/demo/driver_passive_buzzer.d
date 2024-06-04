@@ -31,5 +31,6 @@ demo\driver_passive_buzzer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_
 demo\driver_passive_buzzer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 demo\driver_passive_buzzer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo\driver_passive_buzzer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+demo\driver_passive_buzzer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 demo\driver_passive_buzzer.o: ..\Drivers\STM32F103\tim.h
 demo\driver_passive_buzzer.o: ../Inc/main.h

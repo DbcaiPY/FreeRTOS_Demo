@@ -1,5 +1,5 @@
-demo\tim.o: ..\Drivers\STM32F103\tim.c
-demo\tim.o: ..\Drivers\STM32F103\tim.h
+demo\tim.o: ../Src/tim.c
+demo\tim.o: ../Inc/tim.h
 demo\tim.o: ../Inc/main.h
 demo\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 demo\tim.o: ../Inc/stm32f1xx_hal_conf.h
@@ -30,3 +30,4 @@ demo\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 demo\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 demo\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+demo\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h

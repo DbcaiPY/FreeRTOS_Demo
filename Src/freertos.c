@@ -155,7 +155,10 @@ void StartDefaultTask(void *argument)
 		//DHT11_Test();
 		//PassiveBuzzer_Test();
 		//ActiveBuzzer_Test();
+//		printf("hello!\r\n");
+//		HAL_Delay(500);
 		osDelay(20);
+				
 		//vTaskDelete(defaultTaskHandle);
 	}
 

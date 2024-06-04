@@ -39,6 +39,7 @@ demo\mytask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 demo\mytask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 demo\mytask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 demo\mytask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+demo\mytask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 demo\mytask.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 demo\mytask.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 demo\mytask.o: ../Drivers/STM32F103/driver_key.h
@@ -50,3 +51,4 @@ demo\mytask.o: ../Drivers/STM32F103/driver_light_sensor.h
 demo\mytask.o: ../Drivers/STM32F103/driver_dht11.h
 demo\mytask.o: ../Drivers/STM32F103/driver_passive_buzzer.h
 demo\mytask.o: ../Drivers/STM32F103/driver_active_buzzer.h
+demo\mytask.o: ../Drivers/STM32F103/driver_sg90.h
