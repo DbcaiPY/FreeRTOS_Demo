@@ -41,7 +41,7 @@
 //#define KEY_GPIO_PIN   GPIO_PIN_14
 #define KEY_GPIO_PIN   GPIO_PIN_1
 
-TaskHandle_t xKeyDealHandle;
+extern TaskHandle_t xKeyDealHandle;
 
 void Key_Deal(void);
 
@@ -98,64 +98,58 @@ void Key_Test(void)
 {
     int len;
     int val;
-		size_t heapsize;
     
     Key_Init();
     Led_Init();
-		LCD_Clear();
+	LCD_Clear();
 		
-	  xTaskCreate(Key_Deal, "KeyDealTask", 128, NULL, osPriorityNormal1, &xKeyDealHandle);
-
     while (1)
     {
         //LCD_PrintString(0, 0, "Key Test: ");
-			
-				heapsize = xPortGetFreeHeapSize();
-				LCD_PrintSignedVal(0, 6, heapsize);
 
         val = Key_Read();
-//        Led_Control(LED_GREEN, val);
+//       Led_Control(LED_GREEN, val);
         			
-				if(val == 0)
-				{
-//						vTaskSuspend(keyDealHandle);
-						Led_Control(LED_GREEN, val);
-						len = LCD_PrintString(0, 2, "Key : ");
-						len += LCD_PrintString(len, 2, val ? "Pressed":"Released");
-						LCD_ClearLine(len, 2);
-				}
-				else
-				{
-						vTaskResume(xKeyDealHandle);
-				}
+		if(val == 0)
+		{
+//			vTaskSuspend(keyDealHandle);
+			Led_Control(LED_GREEN, val);
+			len = LCD_PrintString(0, 2, "Key : ");
+			len += LCD_PrintString(len, 2, val ? "Pressed":"Released");
+			LCD_ClearLine(len, 2);
+		}
+		else
+		{
+			vTaskResume(xKeyDealHandle);
+		}
 //				
-//        len = LCD_PrintString(0, 2, "Key : ");
-//        len += LCD_PrintString(len, 2, val ? "Pressed":"Released");
-//        LCD_ClearLine(len, 2);
-////				HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
-//				vTaskDelay(500);
-				vTaskDelay(500);
+//      len = LCD_PrintString(0, 2, "Key : ");
+//      len += LCD_PrintString(len, 2, val ? "Pressed":"Released");
+//      LCD_ClearLine(len, 2);
+///		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+//		vTaskDelay(500);
+		vTaskDelay(500);
     }
 }
 
 void Key_Deal(void)
 {
-		int len;
-		int val;
+	int len;
+	int val;
 	
-		while(1)
-		{
-			val = Key_Read();
-			Led_Control(LED_GREEN, val);
+	while(1)
+	{
+		val = Key_Read();
+		Led_Control(LED_GREEN, val);
 		
-			len = LCD_PrintString(0, 2, "Key : ");
-			len += LCD_PrintString(len, 2, val ? "Pressed":"Released");
-			LCD_ClearLine(len, 2);
+		len = LCD_PrintString(0, 2, "Key : ");
+		len += LCD_PrintString(len, 2, val ? "Pressed":"Released");
+		LCD_ClearLine(len, 2);
 	//	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
 
-			vTaskSuspend(NULL);
-//			vTaskDelay(500);			
-		}
+		vTaskSuspend(NULL);
+//		vTaskDelay(500);			
+	}
 
 }
 

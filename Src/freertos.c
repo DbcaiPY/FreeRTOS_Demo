@@ -33,6 +33,8 @@
 #include "driver_light_sensor.h"
 #include "driver_dht11.h"
 
+#include "MyTask.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,6 +59,7 @@ static BaseType_t keyTestRet;
 static BaseType_t keyDealRet;
 static BaseType_t lightSensorRet;
 static BaseType_t dhtRet;
+static BaseType_t createTaskRet;
 
 static TaskHandle_t  xKeyDealHandle = NULL;
 
@@ -114,22 +117,8 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-	 
-	lightSensorRet = xTaskCreate(LightSensor_Test, "LightSensorTask", 128, NULL, osPriorityNormal1, NULL);
 	
-//	keyDealRet = xTaskCreate(Key_Deal, "KeyDealTask", 128, NULL, osPriorityNormal1, &xKeyDealHandle);
-	keyTestRet = xTaskCreate(Key_Test, "KeyTask", 128, NULL, osPriorityNormal2, NULL);	
-	
-	dhtRet = xTaskCreate(DHT11_Test, "DHt11Task", 128, NULL, osPriorityNormal1, NULL);
-	
-//	if(ret != pdPASS)
-//	{
-//		LCD_PrintString(0, 6, "fail");
-//	}
-//	else
-//	{
-//		LCD_PrintString(0, 6, "success");
-//	}
+	createTaskRet = xTaskCreate(MyTask_CreateTask, "CreateTask", 128, NULL, osPriorityNormal1, NULL);
 	
   /* USER CODE END RTOS_THREADS */
 
@@ -153,9 +142,9 @@ void StartDefaultTask(void *argument)
 	LCD_Init();
 	LCD_Clear();
 	
-  for(;;)
-  {
-    //osDelay(1);
+	for(;;)
+	{
+		//osDelay(1);
 		//Led_Test();
 		//LCD_Test();
 		//HAL_Delay(200);
@@ -164,7 +153,7 @@ void StartDefaultTask(void *argument)
 //		DHT11_Test();
 		osDelay(20);
 		vTaskDelete(defaultTaskHandle);
-  }
+	}
 
   /* USER CODE END StartDefaultTask */
 }

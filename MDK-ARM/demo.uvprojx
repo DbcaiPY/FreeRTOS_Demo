@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/STM32F1xx_HAL_Driver/Inc;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F103</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/STM32F1xx_HAL_Driver/Inc;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F103;..\BLL</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -820,6 +820,31 @@
               <FileName>demo.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\demo.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>BLL</GroupName>
+          <Files>
+            <File>
+              <FileName>MyTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BLL\MyTask.c</FilePath>
+            </File>
+            <File>
+              <FileName>MyTask.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BLL\MyTask.h</FilePath>
+            </File>
+            <File>
+              <FileName>MyInclude.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BLL\MyInclude.c</FilePath>
+            </File>
+            <File>
+              <FileName>MyInclude.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BLL\MyInclude.h</FilePath>
             </File>
           </Files>
         </Group>

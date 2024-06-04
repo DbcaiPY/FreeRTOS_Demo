@@ -309,7 +309,7 @@ int DHT11_Read(int *hum, int *temp)
 void DHT11_Test(void)
 {
 	int hum, temp;
-  int len;
+	int len;
 	BaseType_t preTime;
 	
 	DHT11_Init();
