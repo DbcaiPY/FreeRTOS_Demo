@@ -37,7 +37,7 @@
 // 引脚设置
 
 #define DHT11_GPIO_GROUP      GPIOA
-#define DHT11_GPIO_PIN        GPIO_PIN_1
+#define DHT11_GPIO_PIN        GPIO_PIN_6
 
 /* 控制GPIO读取DHT11的数据 
  * 1. 主机发出至少18MS的低脉冲: start信号
