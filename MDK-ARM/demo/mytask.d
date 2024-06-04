@@ -48,3 +48,5 @@ demo\mytask.o: ../Drivers/STM32F103/driver_timer.h
 demo\mytask.o: ../Drivers/STM32F103/driver_lcd.h
 demo\mytask.o: ../Drivers/STM32F103/driver_light_sensor.h
 demo\mytask.o: ../Drivers/STM32F103/driver_dht11.h
+demo\mytask.o: ../Drivers/STM32F103/driver_passive_buzzer.h
+demo\mytask.o: ../Drivers/STM32F103/driver_active_buzzer.h

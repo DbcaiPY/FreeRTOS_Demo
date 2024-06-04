@@ -811,6 +811,36 @@
               <FileType>5</FileType>
               <FilePath>..\Drivers\STM32F103\driver_dht11.h</FilePath>
             </File>
+            <File>
+              <FileName>driver_passive_buzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_passive_buzzer.c</FilePath>
+            </File>
+            <File>
+              <FileName>driver_passive_buzzer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_passive_buzzer.h</FilePath>
+            </File>
+            <File>
+              <FileName>tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32F103\tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>tim.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\STM32F103\tim.h</FilePath>
+            </File>
+            <File>
+              <FileName>driver_active_buzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_active_buzzer.c</FilePath>
+            </File>
+            <File>
+              <FileName>driver_active_buzzer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_active_buzzer.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

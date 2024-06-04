@@ -32,6 +32,9 @@
 #include "driver_lcd.h"
 #include "driver_light_sensor.h"
 #include "driver_dht11.h"
+#include "driver_passive_buzzer.h"
+#include "driver_active_buzzer.h"
+
 
 #include "MyTask.h"
 
@@ -147,11 +150,13 @@ void StartDefaultTask(void *argument)
 		//Led_Test();
 		//LCD_Test();
 		//HAL_Delay(200);
-//		Key_Test();
-//		LightSensor_Test();
-//		DHT11_Test();
+		//Key_Test();
+		//LightSensor_Test();
+		//DHT11_Test();
+		//PassiveBuzzer_Test();
+		//ActiveBuzzer_Test();
 		osDelay(20);
-		vTaskDelete(defaultTaskHandle);
+		//vTaskDelete(defaultTaskHandle);
 	}
 
   /* USER CODE END StartDefaultTask */

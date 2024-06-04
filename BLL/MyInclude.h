@@ -16,6 +16,8 @@
 #include "driver_lcd.h"
 #include "driver_light_sensor.h"
 #include "driver_dht11.h"
+#include "driver_passive_buzzer.h"
+#include "driver_active_buzzer.h"
 
 /* USER CODE END Includes */
 

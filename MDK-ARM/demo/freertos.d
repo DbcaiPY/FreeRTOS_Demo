@@ -47,4 +47,6 @@ demo\freertos.o: ../Drivers/STM32F103/driver_timer.h
 demo\freertos.o: ../Drivers/STM32F103/driver_lcd.h
 demo\freertos.o: ../Drivers/STM32F103/driver_light_sensor.h
 demo\freertos.o: ../Drivers/STM32F103/driver_dht11.h
+demo\freertos.o: ../Drivers/STM32F103/driver_passive_buzzer.h
+demo\freertos.o: ../Drivers/STM32F103/driver_active_buzzer.h
 demo\freertos.o: ../BLL/MyTask.h

@@ -5,6 +5,7 @@ TaskHandle_t xKeyDealHandle;
 TaskHandle_t xKeyTestHandle;
 TaskHandle_t xLightSensorHandle;
 TaskHandle_t xDHT11Handle;
+TaskHandle_t xBuzzerHandle;
 
 void MyTask_PeriphInit(void)
 {
@@ -16,10 +17,11 @@ void MyTask_CreateTask(void *argument)
 		
 	size_t heapsize;
 	
-	xTaskCreate(Key_Test, "KeyTask", 128, NULL, osPriorityNormal2, &xKeyTestHandle);	
-	xTaskCreate(Key_Deal, "KeyDealTask", 128, NULL, osPriorityNormal1, &xKeyDealHandle);
-	xTaskCreate(LightSensor_Test, "LightSensorTask", 128, NULL, osPriorityNormal1, &xLightSensorHandle);
-	xTaskCreate(DHT11_Test, "DHt11Task", 128, NULL, osPriorityNormal1, &xDHT11Handle);
+//	xTaskCreate(Key_Test, "KeyTask", 128, NULL, osPriorityNormal2, &xKeyTestHandle);	
+//	xTaskCreate(Key_Deal, "KeyDealTask", 128, NULL, osPriorityNormal1, &xKeyDealHandle);
+//	xTaskCreate(LightSensor_Test, "LightSensorTask", 128, NULL, osPriorityNormal1, &xLightSensorHandle);
+//	xTaskCreate(DHT11_Test, "DHt11Task", 128, NULL, osPriorityNormal1, &xDHT11Handle);
+	xTaskCreate(PassiveBuzzer_Test, "DHt11Task", 128, NULL, osPriorityNormal1, &xBuzzerHandle);
 
 	for(;;)
 	{

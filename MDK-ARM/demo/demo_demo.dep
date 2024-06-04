@@ -1,7 +1,7 @@
 Dependencies for Project 'demo', Target 'demo': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (startup_stm32f103xb.s)(0x665EDD56)(--cpu Cortex-M3 -g --apcs=interwork -I ../Inc-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o demo\startup_stm32f103xb.o --depend demo\startup_stm32f103xb.d)
-F (../Src/main.c)(0x6656B61F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\main.o --omf_browse demo\main.crf --depend demo\main.d)
+F (startup_stm32f103xb.s)(0x665EE4AB)(--cpu Cortex-M3 -g --apcs=interwork -I ../Inc-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o demo\startup_stm32f103xb.o --depend demo\startup_stm32f103xb.d)
+F (../Src/main.c)(0x665EE4AA)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\main.o --omf_browse demo\main.crf --depend demo\main.d)
 I (../Inc/main.h)(0x6655A472)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5D103DFA)
 I (../Inc/stm32f1xx_hal_conf.h)(0x6655A472)
@@ -74,7 +74,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x5D103DFE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5D103E04)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6642FA81)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5D103E10)
-F (../Src/freertos.c)(0x665EDD54)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\freertos.o --omf_browse demo\freertos.crf --depend demo\freertos.d)
+F (../Src/freertos.c)(0x665EE7EB)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\freertos.o --omf_browse demo\freertos.crf --depend demo\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D15C15A)
 I (D:\Keil_arm\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\Keil_arm\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -122,6 +122,8 @@ I (../Drivers/STM32F103/driver_timer.h)(0x6655A472)
 I (../Drivers/STM32F103/driver_lcd.h)(0x6655A472)
 I (../Drivers/STM32F103/driver_light_sensor.h)(0x6656B61E)
 I (../Drivers/STM32F103/driver_dht11.h)(0x6655A472)
+I (../Drivers/STM32F103/driver_passive_buzzer.h)(0x65044AF5)
+I (../Drivers/STM32F103/driver_active_buzzer.h)(0x65044AA1)
 I (../BLL/MyTask.h)(0x665ED36F)
 F (../Src/adc.c)(0x66549F90)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\adc.o --omf_browse demo\adc.crf --depend demo\adc.d)
 I (../Inc/adc.h)(0x6655A472)
@@ -1155,6 +1157,106 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D15C15A
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D15C15A)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D15C15A)
 F (..\Drivers\STM32F103\driver_dht11.h)(0x6655A472)()
+F (..\Drivers\STM32F103\driver_passive_buzzer.c)(0x665EE7F8)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\driver_passive_buzzer.o --omf_browse demo\driver_passive_buzzer.crf --depend demo\driver_passive_buzzer.d)
+I (..\Drivers\STM32F103\driver_passive_buzzer.h)(0x65044AF5)
+I (..\Drivers\STM32F103\driver_lcd.h)(0x6655A472)
+I (D:\Keil_arm\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\Drivers\STM32F103\driver_timer.h)(0x6655A472)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5D103DFA)
+I (../Inc/stm32f1xx_hal_conf.h)(0x6655A472)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5D103E06)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5D103DFA)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5D15C15A)
+I (D:\Keil_arm\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5D103E06)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5D103DFC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5D103DFC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x5D103DF4)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5D103DF2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5D103DF2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5D103DEC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5D103DE6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5D103DE6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5D103DF6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5D103DF6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x5D103DFE)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5D103E04)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6642FA81)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5D103E10)
+I (..\Drivers\STM32F103\tim.h)(0x64CDD5C5)
+I (../Inc/main.h)(0x6655A472)
+F (..\Drivers\STM32F103\driver_passive_buzzer.h)(0x65044AF5)()
+F (..\Drivers\STM32F103\tim.c)(0x64CDDBF7)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\tim.o --omf_browse demo\tim.crf --depend demo\tim.d)
+I (..\Drivers\STM32F103\tim.h)(0x64CDD5C5)
+I (../Inc/main.h)(0x6655A472)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5D103DFA)
+I (../Inc/stm32f1xx_hal_conf.h)(0x6655A472)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5D103E06)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5D103DFA)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5D15C15A)
+I (D:\Keil_arm\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5D15C15A)
+I (D:\Keil_arm\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5D103E06)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5D103DFC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5D103DFC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x5D103DF4)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5D103DF2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5D103DF2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5D103DEC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5D103DE6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5D103DE6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5D103DF6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5D103DF6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x5D103DFE)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5D103E04)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6642FA81)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5D103E10)
+F (..\Drivers\STM32F103\tim.h)(0x64CDD5C5)()
+F (..\Drivers\STM32F103\driver_active_buzzer.c)(0x65044A9F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\driver_active_buzzer.o --omf_browse demo\driver_active_buzzer.crf --depend demo\driver_active_buzzer.d)
+I (..\Drivers\STM32F103\driver_active_buzzer.h)(0x65044AA1)
+I (..\Drivers\STM32F103\driver_lcd.h)(0x6655A472)
+I (D:\Keil_arm\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\Drivers\STM32F103\driver_timer.h)(0x6655A472)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5D103DFA)
+I (../Inc/stm32f1xx_hal_conf.h)(0x6655A472)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5D103E06)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5D103DFA)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D15C15A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5D15C15A)
+I (D:\Keil_arm\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5D103E06)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5D103DFC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5D103DFC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x5D103DF4)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5D103DF2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5D103DF2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5D103DEC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5D103DE6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5D103DE6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5D103DF6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5D103DF6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x5D103DFE)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5D103E04)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6642FA81)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5D103E10)
+F (..\Drivers\STM32F103\driver_active_buzzer.h)(0x65044AA1)()
 F (.\demo.c)(0x6656B61E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\demo.o --omf_browse demo\demo.crf --depend demo\demo.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D15C15A)
 I (D:\Keil_arm\ARM\ARMCC\include\stddef.h)(0x6025237E)
@@ -1178,8 +1280,8 @@ I (../Drivers/STM32F103/driver_timer.h)(0x6655A472)
 I (../Drivers/STM32F103/driver_lcd.h)(0x6655A472)
 I (../Drivers/STM32F103/driver_light_sensor.h)(0x6656B61E)
 I (../Drivers/STM32F103/driver_dht11.h)(0x6655A472)
-F (..\BLL\MyTask.c)(0x665EDA99)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\mytask.o --omf_browse demo\mytask.crf --depend demo\mytask.d)
-I (..\BLL\MyInclude.h)(0x665ED32D)
+F (..\BLL\MyTask.c)(0x665EE7EB)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\mytask.o --omf_browse demo\mytask.crf --depend demo\mytask.d)
+I (..\BLL\MyInclude.h)(0x665EE375)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D15C15A)
 I (D:\Keil_arm\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\Keil_arm\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1227,6 +1329,8 @@ I (../Drivers/STM32F103/driver_timer.h)(0x6655A472)
 I (../Drivers/STM32F103/driver_lcd.h)(0x6655A472)
 I (../Drivers/STM32F103/driver_light_sensor.h)(0x6656B61E)
 I (../Drivers/STM32F103/driver_dht11.h)(0x6655A472)
+I (../Drivers/STM32F103/driver_passive_buzzer.h)(0x65044AF5)
+I (../Drivers/STM32F103/driver_active_buzzer.h)(0x65044AA1)
 F (..\BLL\MyTask.h)(0x665ED36F)()
 F (..\BLL\MyInclude.c)(0x665ED32D)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F103 -I ../BLL-I.\RTE\_demo-ID:\Keil_arm\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil_arm\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o demo\myinclude.o --omf_browse demo\myinclude.crf --depend demo\myinclude.d)
-F (..\BLL\MyInclude.h)(0x665ED32D)()
+F (..\BLL\MyInclude.h)(0x665EE375)()
