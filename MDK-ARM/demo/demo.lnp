@@ -48,9 +48,12 @@
 "demo\driver_passive_buzzer.o"
 "demo\driver_active_buzzer.o"
 "demo\driver_sg90.o"
+"demo\driver_max30102.o"
+"demo\algorithm_max30102.o"
 "demo\demo.o"
 "demo\mytask.o"
 "demo\myinclude.o"
+"demo\mymax30102.o"
 --library_type=microlib --strict --scatter "demo\demo.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

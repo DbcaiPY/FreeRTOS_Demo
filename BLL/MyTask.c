@@ -24,6 +24,7 @@ void MyTask_CreateTask(void *argument)
 //	xTaskCreate(DHT11_Test, "DHt11Task", 128, NULL, osPriorityNormal1, &xDHT11Handle);
 //	xTaskCreate(PassiveBuzzer_Test, "DHt11Task", 128, NULL, osPriorityNormal1, &xBuzzerHandle);
 //	xTaskCreate(SG90_Test, "SG90Task", 128, NULL, osPriorityNormal1, &xLightSensorHandle);
+ 	xTaskCreate(Max30102_Test, "Max30102Task", 128, NULL, osPriorityNormal2, &xLightSensorHandle);
 
 	
 	

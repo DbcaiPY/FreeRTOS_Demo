@@ -34,7 +34,7 @@
 #include "driver_dht11.h"
 #include "driver_passive_buzzer.h"
 #include "driver_active_buzzer.h"
-
+#include "MyMax30102.h"
 
 #include "MyTask.h"
 
@@ -157,6 +157,8 @@ void StartDefaultTask(void *argument)
 		//ActiveBuzzer_Test();
 //		printf("hello!\r\n");
 //		HAL_Delay(500);
+//		Max30102_Test();
+		
 		osDelay(20);
 				
 		//vTaskDelete(defaultTaskHandle);

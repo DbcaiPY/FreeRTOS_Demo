@@ -52,3 +52,4 @@ demo\mytask.o: ../Drivers/STM32F103/driver_dht11.h
 demo\mytask.o: ../Drivers/STM32F103/driver_passive_buzzer.h
 demo\mytask.o: ../Drivers/STM32F103/driver_active_buzzer.h
 demo\mytask.o: ../Drivers/STM32F103/driver_sg90.h
+demo\mytask.o: ..\BLL\MyMax30102.h

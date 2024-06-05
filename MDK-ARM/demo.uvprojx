@@ -1009,6 +1009,26 @@
               <FileType>5</FileType>
               <FilePath>..\Drivers\STM32F103\driver_sg90.h</FilePath>
             </File>
+            <File>
+              <FileName>driver_max30102.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_max30102.c</FilePath>
+            </File>
+            <File>
+              <FileName>driver_max30102.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\STM32F103\driver_max30102.h</FilePath>
+            </File>
+            <File>
+              <FileName>algorithm_max30102.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\STM32F103\algorithm_max30102.c</FilePath>
+            </File>
+            <File>
+              <FileName>algorithm_max30102.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\STM32F103\algorithm_max30102.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1043,6 +1063,16 @@
               <FileName>MyInclude.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\BLL\MyInclude.h</FilePath>
+            </File>
+            <File>
+              <FileName>MyMax30102.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BLL\MyMax30102.c</FilePath>
+            </File>
+            <File>
+              <FileName>MyMax30102.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BLL\MyMax30102.h</FilePath>
             </File>
           </Files>
         </Group>

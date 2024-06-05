@@ -19,6 +19,7 @@
 #include "driver_passive_buzzer.h"
 #include "driver_active_buzzer.h"
 #include "driver_sg90.h"
+#include "MyMax30102.h"
 
 /* USER CODE END Includes */   
 
