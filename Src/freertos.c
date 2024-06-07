@@ -37,6 +37,8 @@
 #include "MyMax30102.h"
 
 #include "MyTask.h"
+#include "Data.h"
+#include "ShowMenu.h"
 
 /* USER CODE END Includes */
 
@@ -65,6 +67,28 @@ static BaseType_t dhtRet;
 static BaseType_t createTaskRet;
 
 static TaskHandle_t  xKeyDealHandle = NULL;
+
+
+TimerHandle_t g_Timer;
+TimerHandle_t g_Clock_Timer;
+
+TaskHandle_t xRootTaskHandle = NULL;
+
+TaskHandle_t xShowTimeTaskHandle = NULL;
+TaskHandle_t xShowMenuTaskHandle = NULL;
+TaskHandle_t xShowCalendarTaskHandle = NULL;
+TaskHandle_t xShowClockTaskHandle = NULL;
+TaskHandle_t xShowFlashLightTaskHandle = NULL;
+TaskHandle_t xShowSettingTaskHandle = NULL;
+TaskHandle_t xShowWoodenFishTaskHandle = NULL;
+TaskHandle_t xShowDHT11TaskHandle = NULL;
+TaskHandle_t xShowHRSPO2TaskHandle = NULL;
+
+QueueHandle_t g_xQueueMenu;	
+uint16_t key1_filter = 0;
+uint16_t key2_filter = 0;
+uint16_t key3_filter = 0;
+uint16_t key4_filter = 0;
 
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
@@ -122,6 +146,8 @@ void MX_FREERTOS_Init(void) {
 	
 	createTaskRet = xTaskCreate(MyTask_CreateTask, "CreateTask", 128, NULL, osPriorityNormal1, NULL);
 	
+	xTaskCreate(ShowMenuTask, "ShowMenuTask", 256, NULL, osPriorityNormal, &xShowMenuTaskHandle);
+	
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -170,10 +196,66 @@ void StartDefaultTask(void *argument)
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
 
-TaskHandle_t GetKeyDealHandle(void)
-{
-	 return xKeyDealHandle;
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{	
+	/* key interrupt : send data to queue */
+	
+	/* some data maybe useless */
+	extern BaseType_t end_flag;
+	extern BaseType_t seclect_end;
+	BaseType_t  RM_Flag, LM_Flag, EN_Flag, EX_Flag;
+	Key_data key_data;
+		
+    if(GPIO_Pin == GPIO_PIN_11)
+	{ 
+		for(int i = 0; i<5000; i++){}
+		if(end_flag == 1&&seclect_end == 0)
+		{
+			RM_Flag = 1;
+			key_data.rdata = RM_Flag;
+			xQueueSendToBackFromISR(g_xQueueMenu, &key_data, NULL);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+			RM_Flag = 0;			
+		}
+	}
+	if(GPIO_Pin == GPIO_PIN_10)
+	{ 
+		for(int i = 0; i<5000; i++){}
+		if(end_flag == 1&&seclect_end == 0)
+		{
+		 	LM_Flag = 1;
+			key_data.ldata = LM_Flag;
+			xQueueSendToBackFromISR(g_xQueueMenu, &key_data, NULL);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+			LM_Flag = 0;
+		}
+	}
+	if(GPIO_Pin == GPIO_PIN_1)
+	{
+		for(int i = 0; i<5000; i++){}		
+		if(end_flag == 1&&seclect_end == 0)
+		{
+			EN_Flag = 1;
+			key_data.updata = EN_Flag;
+			xQueueSendToBackFromISR(g_xQueueMenu, &key_data, NULL);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+			EN_Flag = 0;
+		}
+	}
+	if(GPIO_Pin == GPIO_PIN_0)
+	{
+		for(int i = 0; i<5000; i++){}		
+		if(end_flag == 1&&seclect_end == 0)
+		{
+			EX_Flag = 1;
+			key_data.exdata = EX_Flag;
+			if(end_flag == 1&&seclect_end == 0)xQueueSendToBackFromISR(g_xQueueMenu, &key_data, NULL);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+			EX_Flag = 0;
+		}
+	}
 }
+
 
 /* USER CODE END Application */
 

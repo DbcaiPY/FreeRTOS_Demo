@@ -22,19 +22,45 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\Code\FreeRTOS_Demo\FreeRTOS_Demo\MDK-ARM\demo.uvprojx
-Project File Date:  06/05/2024
+Project File Date:  06/06/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_arm\ARM\ARMCC\Bin'
 Build target 'demo'
-assembling startup_stm32f103xb.s...
-compiling driver_max30102.c...
-compiling i2c.c...
-compiling main.c...
 linking...
-Program Size: Code=20868 RO-data=2636 RW-data=204 ZI-data=18764  
-FromELF: creating hex file...
-"demo\demo.axf" - 0 Error(s), 0 Warning(s).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching tim.o(.bss).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching showmenu.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching usart.o(.bss).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_timebase_tim.o(.bss).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching queue.o(.bss).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching tasks.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching adc.o(.bss).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mymax30102.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching u8x8_byte.o(.bss).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching heap_4.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching timers.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching freertos.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching port.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching driver_oled.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching freertos.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching freertos.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching freertos.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching freertos.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching freertos.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching freertos.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching cmsis_os2.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching driver_passive_buzzer.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching mytask.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching stdout.o(.data).
+demo\demo.axf: Error: L6406E: No space in execution regions with .ANY selector matching u8x8_byte.o(.data).
+demo\demo.axf: Error: L6407E: Sections of aggregate size 0x2e0 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 29 error messages.
+"demo\demo.axf" - 29 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -58,7 +84,8 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.5.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:02
+Target not created.
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

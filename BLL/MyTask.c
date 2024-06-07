@@ -6,6 +6,7 @@ TaskHandle_t xLightSensorHandle;
 TaskHandle_t xDHT11Handle;
 TaskHandle_t xBuzzerHandle;
 
+
 void MyTask_PeriphInit(void)
 {
 	SG90_Init();
@@ -25,7 +26,6 @@ void MyTask_CreateTask(void *argument)
 //	xTaskCreate(PassiveBuzzer_Test, "DHt11Task", 128, NULL, osPriorityNormal1, &xBuzzerHandle);
 //	xTaskCreate(SG90_Test, "SG90Task", 128, NULL, osPriorityNormal1, &xLightSensorHandle);
  	xTaskCreate(Max30102_Test, "Max30102Task", 128, NULL, osPriorityNormal2, &xLightSensorHandle);
-
 	
 	
 	for(;;)

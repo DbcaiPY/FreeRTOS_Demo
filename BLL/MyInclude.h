@@ -21,6 +21,14 @@
 #include "driver_sg90.h"
 #include "MyMax30102.h"
 
+
+#include "event_groups.h"
+#include "semphr.h"
+#include "queue.h"
+#include "gpio.h"
+#include "u8g2.h"
+#include "Data.h"
+
 /* USER CODE END Includes */   
 
 #endif

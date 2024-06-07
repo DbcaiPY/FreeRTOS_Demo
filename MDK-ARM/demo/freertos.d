@@ -52,3 +52,8 @@ demo\freertos.o: ../Drivers/STM32F103/driver_passive_buzzer.h
 demo\freertos.o: ../Drivers/STM32F103/driver_active_buzzer.h
 demo\freertos.o: ../BLL/MyMax30102.h
 demo\freertos.o: ../BLL/MyTask.h
+demo\freertos.o: ../BLL/Data.h
+demo\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+demo\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+demo\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+demo\freertos.o: ../BLL/ShowMenu.h

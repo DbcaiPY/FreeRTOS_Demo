@@ -53,3 +53,13 @@ demo\mytask.o: ../Drivers/STM32F103/driver_passive_buzzer.h
 demo\mytask.o: ../Drivers/STM32F103/driver_active_buzzer.h
 demo\mytask.o: ../Drivers/STM32F103/driver_sg90.h
 demo\mytask.o: ..\BLL\MyMax30102.h
+demo\mytask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+demo\mytask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+demo\mytask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+demo\mytask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+demo\mytask.o: ../Inc/gpio.h
+demo\mytask.o: ..\u8g2\u8g2.h
+demo\mytask.o: ..\u8g2\u8x8.h
+demo\mytask.o: D:\Keil_arm\ARM\ARMCC\Bin\..\include\stdarg.h
+demo\mytask.o: D:\Keil_arm\ARM\ARMCC\Bin\..\include\limits.h
+demo\mytask.o: ..\BLL\Data.h
